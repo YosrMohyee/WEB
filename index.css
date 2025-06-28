@@ -1,0 +1,18 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;  
+    flex-direction: column;  /* stack children vertically (optional) */
+}
+h1{
+    color:blue;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+p{
+    color:brown;
+    font-size: 20px;
+}
+form{
+    background-color: pink;
+    padding: 10px;
+}
