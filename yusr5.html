@@ -11,19 +11,6 @@ body{background-color: rgb(202, 227, 253);
      /* ترتيب عمودي */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
     
         img{  width: 350px; height:200px; padding-top:50px;  }
@@ -43,70 +30,46 @@ body{background-color: rgb(202, 227, 253);
   }   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
-
-
-
-
-
-
-
-
 
 
 </head>
 
 
-
-
 <body>
 
-  <div class="container"> 
+    <div class="container"> 
       <img src="qrcde.png" alt="its a qr code">
       <h1>Improve your front-end skills <br>
          by building projects </h1>
-          <p>
-    Scan the QR code to visit Frontend<br>
-     Mentor and take yourcoding skills to <br>
-     the next level
-  </p>
+      
+          <p id="p1"> idScan the QR code to visit Frontend<br>
+          Mentor and take yourcoding skills to <br>
+          the next level
+           </p>
 
-  </div>
+    </div>
 
-  
- 
-
-
-
-
-
+   <button onclick="hellofunction()">Click Here</button>
+   <p id="text"></p>
 
 </body>
+  
 
 
+<script>
+  var h1elemen = document.querySelector('h1');
+  h1elemen.innerHTML = "Modify the text using javascrip";
+  var p1 = document.getElementById('p1')
+  p1.innerHTML = "paragraph 1 changed using JS";
+
+   function hellofunction(){
+  var textVar = document.getElementById('text');
+  textVar.innerHTML = "botton clicked! Hello"
+  }
 
 
-
-
-
-
-
-
-
-
+</script>
 
 </html>
 
